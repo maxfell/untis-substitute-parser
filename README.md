@@ -27,7 +27,6 @@ The server should run automatically on heroku. If you want to test locally run `
             was: {
                teacher: "Wend",
                shorthand: "Ma",
-               room: "018"
             },
             is: {
                teacher: "Arnd",
@@ -41,7 +40,6 @@ The server should run automatically on heroku. If you want to test locally run `
             was: {
                teacher: "Gold",
                shorthand: "Inf",
-               room: "017"
             },
             is: {
                teacher: "Dorn",
