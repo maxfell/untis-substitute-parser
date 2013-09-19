@@ -33,7 +33,7 @@ def get_plan(site_url)
         substitutes[form] = Array.new
       end
       
-      puts row_data
+      #puts row_data
     
       substitutes[form].push({
         :period => row_data[1].text()[0].to_i,
