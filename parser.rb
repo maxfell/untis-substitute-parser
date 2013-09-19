@@ -32,19 +32,22 @@ def get_plan(site_url)
       unless substitutes.has_key?(form) then
         substitutes[form] = Array.new
       end
+      
+      puts row_data
     
       substitutes[form].push({
         :period => row_data[1].text()[0].to_i,
-        :type => row_data[8].text(),
-        :text => row_data[9].text(),
+        :type => row_data[7].text(),
+        :text => row_data[8].text(),
         :was => {
           :teacher => row_data[2].text(),
           :shorthand => row_data[3].text(),
-          :room => row_data[4].text()},
+          #:room => row_data[4].text()
+          },
         :is => {
-          :teacher => row_data[5].text(),
-          :shorthand => row_data[6].text(),
-          :room => row_data[7].text()}
+          :teacher => row_data[4].text(),
+          :shorthand => row_data[5].text(),
+          :room => row_data[6].text()}
         })
       end
   end

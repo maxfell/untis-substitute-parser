@@ -1,6 +1,9 @@
 #Vertetungsplan Parser
 This is a parser for the substitute plan of my school. It should work with every other school's substitute plan as long as it's created with [Untis](http://www.grupet.at/) (As required by Berlin senate). You need to edit the urls in `config/urls.yml` to match your school's setup. The parser itself should be pretty forgiving when it comes to errors but you may need to adapt your implementation depeding on how your secretary is using the system.
 
+#Changes
+ - **Sept. 19**: Removed was/room because it's not included by the server anymore
+
 #Running the Server
 The server should run automatically on heroku. If you want to test locally run `ruby web.rb` then navigate to *http://localhost:4567/monday.json*.
 
